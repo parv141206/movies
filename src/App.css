@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+input {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e0e1a; /* Dark background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3f0659; /* Blue color for the handle */
+  border-radius: 10px; /* Rounded handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8800ff; /* Darker blue color on hover */
+}
+input::placeholder {
+  color: white !important;
+}
+/* CSS */
+.container-background {
+  position: relative;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/024/165/156/original/galaxy-and-nebula-abstract-space-background-endless-universe-with-stars-and-galaxies-in-outer-space-cosmos-art-motion-design-free-video.jpg")
+    no-repeat;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 255);
+  background-position: center bottom; /* Start gradient from the bottom */
+  min-height: 100vh; /* Minimum height to fill the viewport */
+}
+
+.container-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 255));
+}
